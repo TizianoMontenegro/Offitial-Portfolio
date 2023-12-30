@@ -1,5 +1,5 @@
 import './App.css'
-import { GithubIconDark, GithubIconLight, InstagramIcon, JavascriptIcon, LinkedinIcon, NextjsIconDark, ReactIcon, TwitterIcon, TypescriptIcon } from './components/Icons'
+import { CssIcon, FacebookIcon, GithubIconDark, GithubIconLight, HtmlIcon, InstagramIcon, JavascriptIcon, LinkedinIcon, NextjsIconLight, PythonIcon, ReactIcon, ReduxIcon, SqlIcon, TwitterIcon, TypescriptIcon } from './components/Icons'
 
 function App() {
   return (
@@ -8,10 +8,22 @@ function App() {
         <div className='header--container'>
           <span>ßÓ╔Óê│▲V®Ð$åÈµ¼ÄaõÜ=S╗G¡U:♠○◘9Õ5-4045453241®F5◄8-51T6♦135</span>
           <div className='tech--list'>
-            <GithubIconLight />
-            <LinkedinIcon />
-            <TwitterIcon />
-            <InstagramIcon />
+            <span>tizianomontenegro07@gmail.com</span>
+            <a target='_blank' href="https://github.com/TiziDevScripter">
+              <GithubIconLight />
+            </a>
+            <a target='_blank' href="https://www.linkedin.com/in/tiziano-montenegro-8133a6238/">
+              <LinkedinIcon />
+            </a>
+            <a target='_blank' href="https://twitter.com/tizidevscripter">
+              <TwitterIcon />
+            </a>
+            <a target='_blank' href="https://www.instagram.com/tizianomontenegro07">
+              <InstagramIcon />
+            </a>
+            <a target='_blank' href="https://www.facebook.com/tznmonte">
+              <FacebookIcon />
+            </a>
           </div>
         </div>
       </header>
@@ -78,18 +90,20 @@ function App() {
                 <h4>Front-End</h4>
                 <div className='tech--list'>
                   <ReactIcon />
-                  <NextjsIconDark />
-                  <ReactIcon />
+                  <ReduxIcon />
+                  <NextjsIconLight />
                 </div>
               </article>
 
               <article className="skills__tech">
                 <h4>Programming Languages</h4>
                 <div className='tech--list'>
+                  <HtmlIcon />
+                  <CssIcon />
                   <JavascriptIcon />
-
                   <TypescriptIcon />
-
+                  <PythonIcon />
+                  <SqlIcon />
                 </div>
               </article>
 
@@ -177,6 +191,22 @@ function App() {
                 </section>
               </article>
             </section>
+          </article>
+
+
+          <article className="main__skills">
+            <h2 className='text-left-slash'>Next steps and goals</h2>
+
+          </article>
+
+          <article className="main__skills">
+            <h2 className='text-left-slash'>Contact</h2>
+
+          </article>
+
+          <article className="main__skills">
+            <h2 className='text-left-slash'>Greatings</h2>
+
           </article>
         </section>
       </main>

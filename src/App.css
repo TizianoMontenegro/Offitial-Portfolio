@@ -37,11 +37,11 @@
   background-color: var(--quartenary-color);
 }
 .main__col h2 {
-  color: #ccc;
+  color: var(--smooth-color);
   margin: 0;
 }
 .main__col p {
-  color: #ccc;
+  /* color: var(--smooth-color); */
 }
 .main__col article > p {
   margin: 1em 0 2em;
@@ -70,7 +70,7 @@
 
 .main__description {
   /* max-width: 300px; */
-  color: #bbb;
+  /* color: #bbb; */
 }
 
 .skills__techs {

@@ -1,9 +1,10 @@
 :root {
   --max-width: 1200px;
   --color: #fff;
+  --smooth-color: #ccc;
   /* --color: #0079FF; */
   --background-color: #0f0f0f;
-  --primary-color: #FF0303;
+  --primary-color: #dc1;
   --secondary-color: #5C8374;
   --tertiary-color: #1B4242;
   --quartenary-color: #111;
@@ -16,7 +17,10 @@
 body {
   margin: 0;
   background-color: var(--background-color);
-  color: var(--color);
+  color: var(--smooth-color);
+}
+ul {
+  /* color: var(--smooth-color); */
 }
 .text-left-slash {
   position: relative;
