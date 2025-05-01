@@ -1,0 +1,18 @@
+.skills__tech {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    /* background-color: antiquewhite; */
+    outline: var(--outline);
+}
+
+.skills__tech h4 {
+    margin: 0;
+}
+
+.tech--list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+}

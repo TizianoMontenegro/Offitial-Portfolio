@@ -1,0 +1,30 @@
+/* MAIN */
+.main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.main__col {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 2em;
+    background-color: var(--quartenary-color);
+}
+
+.main__col h2 {
+    color: var(--smooth-color);
+    margin: 0;
+}
+
+.main__col p {
+    /* color: var(--smooth-color); */
+}
+
+.main__col article>p {
+    margin: 1em 0 2em;
+}
+
