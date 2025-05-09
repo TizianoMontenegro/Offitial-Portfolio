@@ -1,4 +1,4 @@
-import { GithubIconLight, OpenWebIconLight } from "@/assets"
+// import { GithubIconLight, OpenWebIconLight } from "@/assets"
 import "./ProjectCard.css"
 import { ReactNode } from "react"
 
@@ -12,20 +12,20 @@ interface Params {
 }
 
 export const ProjectCard = ({
-  projectTitle,
-  projectDescription,
+  // projectTitle,
+  // projectDescription,
   projectImageUrl, 
-  builtInTechsIcons,
-  githubSourceCode,
-  webProjectUrl
+  // builtInTechsIcons,
+  // githubSourceCode,
+  // webProjectUrl
 }: Params) => {
   return (
 
     <article className="main__project">
       <img src={projectImageUrl} alt="project image overview" />
-      <h3>{ projectTitle }</h3>
-      <p>{ projectDescription }</p>
-      <section className="section--info">
+      {/* <h3>{ projectTitle }</h3>
+      <p>{ projectDescription }</p> */}
+      {/* <section className="section--info">
 
         <article>
           <p>Built in</p>
@@ -48,7 +48,7 @@ export const ProjectCard = ({
           </div>
         </article>
 
-      </section>
+      </section> */}
     </article>
   )
 }

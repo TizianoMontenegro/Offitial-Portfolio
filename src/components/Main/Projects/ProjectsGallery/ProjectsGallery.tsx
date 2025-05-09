@@ -15,6 +15,15 @@ export const ProjectsGallery = () => {
             <PythonIcon />
             <SqlIcon />
             <ReactIcon />
+            <PythonIcon />
+            <SqlIcon />
+            <ReactIcon />
+            <PythonIcon />
+            <SqlIcon />
+            <ReactIcon />
+            <PythonIcon />
+            <SqlIcon />
+            <ReactIcon />
           </>
         }
         githubSourceCode="https://github.com/TizianoMontenegro/Contacts"
