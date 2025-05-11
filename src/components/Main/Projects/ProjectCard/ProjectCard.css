@@ -1,0 +1,36 @@
+.main__project {
+    /* background-color: brown; */
+    /* padding: 1em; */
+    transition: transform .1s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.main__project img {
+    width: 100%;
+    transition: transform .1s;
+}
+
+.main__project:hover {
+    /* background-color: brown; */
+    transform: scale(1.1);
+}
+
+.main__project:hover > img {
+    /* background-color: brown; */
+    transform: scale(1.1);
+}
+
+
+
+/* 
+.section--info {
+    display: flex;
+    gap: 1.5em;
+    row-gap: 0;
+    flex-wrap: wrap;
+}
+
+.section--info article p {
+    margin: 1em 0;
+} */

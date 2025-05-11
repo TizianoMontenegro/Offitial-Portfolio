@@ -8,15 +8,17 @@ export const Main = () => {
 
       <section className='main__col'>
         
-        <h2>Projects And Technologies</h2>
-        <p>Click some tech to sort projects by it tech.</p>
+        <article>
+          <h2 style={{fontSize: "3lh"}}>Projects And Technologies</h2>
+          <p style={{marginBottom: 0, fontSize: "1lh"}}>Click some tech to sort projects by techs.</p>
+        </article>
 
 
         <Techs />
 
         <Projects />
 
-        <div className="divisor" />
+        {/* <div className="divisor" /> */}
 
       </section>
     </main>

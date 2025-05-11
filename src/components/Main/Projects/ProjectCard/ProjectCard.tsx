@@ -3,12 +3,12 @@ import "./ProjectCard.css"
 import { ReactNode } from "react"
 
 interface Params {
-  projectTitle: string
-  projectDescription: string
+  // projectTitle: string
+  // projectDescription: string
   projectImageUrl: string
-  builtInTechsIcons: ReactNode,
-  githubSourceCode: string,
-  webProjectUrl: string
+  // builtInTechsIcons: ReactNode,
+  // githubSourceCode: string,
+  // webProjectUrl: string
 }
 
 export const ProjectCard = ({
@@ -23,6 +23,8 @@ export const ProjectCard = ({
 
     <article className="main__project">
       <img src={projectImageUrl} alt="project image overview" />
+
+
       {/* <h3>{ projectTitle }</h3>
       <p>{ projectDescription }</p> */}
       {/* <section className="section--info">
