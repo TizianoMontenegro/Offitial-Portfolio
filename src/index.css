@@ -33,3 +33,19 @@ ul {
   margin: 0 auto;
   background-image: linear-gradient(to right, #eee, #ddd);
 }
+
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: .6em;
+}
+
+*::-webkit-scrollbar-track {
+  background:  var(--quartenary-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  /* border-radius: 0; */
+  /* border: 3px solid orange; */
+}

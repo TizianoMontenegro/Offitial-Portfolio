@@ -1,0 +1,97 @@
+/* MODAL */
+.projects-modal {
+    max-width: 800px;
+    padding: .5em;
+    background-color: var(--quartenary-color);
+    color: var(--quartenary-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.projects-modal h1,
+.projects-modal h2,
+.projects-modal h3,
+.projects-modal h4,
+.projects-modal h5,
+.projects-modal h6,
+.projects-modal p,
+.projects-modal a,
+.projects-modal span,
+.projects-modal div,
+.projects-modal section,
+.projects-modal article,
+.projects-modal li {
+    color: var(--smooth-color);
+}
+
+.modal-closer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    /* transform: translateY(-50%); */
+}
+.modal-closer button {
+    border: none;
+    background-color: #0005;
+
+    padding: .3em .6em;
+
+    font-size: 1.5em;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0005;
+
+    user-select: none;
+}
+.modal-closer button:hover {
+    background-color: #0006;
+}
+
+/* SLIDER */
+.slider {
+    display: flex;
+    position: relative;
+
+    max-width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.arrow-button {
+    position: absolute;
+
+    height: inherit;
+    width: 2em;
+
+    padding: 0;
+    border: 0;
+
+    background-color: #0005;
+    transition: background-color .1s ease-in-out;
+
+    font-size: 1.5em;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0005;
+
+    user-select: none;
+}
+.arrow-button:hover {
+    background-color: #0006;
+}
+.arrow-button--left {
+    top: 0;
+    left: 0;
+}
+.arrow-button--right {
+    top: 0;
+    right: 0;
+}
+
+.images-container img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
