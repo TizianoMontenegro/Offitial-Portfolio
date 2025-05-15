@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     gap: 3em;
-    padding: 2em;
+    padding: var(--pad-standard);
     background-color: var(--quartenary-color);
 }
 
@@ -20,11 +20,20 @@
     margin: 0;
 }
 
-.main__col p {
-    /* color: var(--smooth-color); */
-}
+/* .main__col p {
+    color: var(--smooth-color);
+} */
 
 .main__col article>p {
     margin: 1em 0 2em;
 }
 
+
+/* .main__titles {} */
+.main__titles h2 {
+    font-size: 3lh;
+}
+.main__titles p {
+    margin-bottom: 0;
+    font-size: 1lh;
+}

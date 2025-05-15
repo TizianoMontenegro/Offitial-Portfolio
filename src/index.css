@@ -1,5 +1,6 @@
 :root {
-  --max-width: 1200px;
+  --max-width: 1000px;
+  --pad-standard: 32px;
   --color: #fff;
   --smooth-color: #ccc;
   /* --color: #0079FF; */

@@ -4,6 +4,12 @@ import { projectsDataType } from "@/types";
 import { ProjectModal } from "./ProjectModal/ProjectModal";
 import { useState } from "react";
 
+import { gsap } from "gsap/gsap-core"
+import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(useGSAP, ScrollTrigger)
+
 const projectsData: projectsDataType[] = [
   {
     id: 1,
@@ -43,6 +49,20 @@ export const Projects = () => {
   const onCloseModal = () => {
     setSelectedProject(null);
   };
+
+
+  useGSAP(() => {
+    gsap.from(".main__project--list div", {
+      scrollTrigger: {
+        trigger: ".main__project--list div",
+        toggleActions: "restart none none none"
+      },
+
+      x: -100,
+      opacity: 0,
+      stagger: .1
+    })
+  }, {scope: ".main"})
 
   return (
     <article className="main__projects">
