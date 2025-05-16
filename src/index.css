@@ -1,6 +1,8 @@
 :root {
   --max-width: 1000px;
-  --pad-standard: 32px;
+  --pad-x-standard: 32px;
+  --pad-y-standard: 64px;
+  --pad-standard-min: 16px;
   --color: #fff;
   --smooth-color: #ccc;
   /* --color: #0079FF; */
@@ -11,6 +13,11 @@
   --tertiary-color: #1B4242;
   --quartenary-color: #111;
   --outline: 1px solid #eee;
+}
+@media (max-width: 500px) {
+  :root {
+    --pad-x-standard: 10px;
+  }
 }
 * {
   box-sizing: border-box;

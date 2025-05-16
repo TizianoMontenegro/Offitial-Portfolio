@@ -30,7 +30,7 @@ export const Techs = () => {
         amount: .5,
       },
     })
-  }, {scope: ".main"})
+  })
   
   return (
     <section className="techs">

@@ -1,7 +1,8 @@
 import "./Projects.css"
-import { ProjectCard } from "./ProjectCard/ProjectCard"
+
 import { projectsDataType } from "@/types";
 import { ProjectModal } from "./ProjectModal/ProjectModal";
+import { ProjectCard } from "./ProjectCard/ProjectCard";
 import { useState } from "react";
 
 import { gsap } from "gsap/gsap-core"
@@ -62,7 +63,7 @@ export const Projects = () => {
       opacity: 0,
       stagger: .1
     })
-  }, {scope: ".main"})
+  })
 
   return (
     <article className="main__projects">

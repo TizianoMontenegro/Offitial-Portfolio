@@ -10,3 +10,9 @@
     grid-auto-rows: max-content;
     gap: 2em;
 }
+
+@media (max-width: 710px) {
+    .main__project--list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}

@@ -1,10 +1,47 @@
 import "./Header.css"
 import { GithubIconLight, LinkedinIcon } from "../../assets/Icons"
 
+import { gsap } from "gsap/gsap-core"
+import { useGSAP } from "@gsap/react"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(useGSAP, ScrollTrigger)
+
 export const Header = () => {
+
+  useGSAP(() => {
+    gsap.from(".wave", {
+      scrollTrigger: {
+        trigger: ".header-landscape",
+        // toggleActions: "play pause restart none",
+        toggleActions: "play none none none",
+      },
+      // opacity: 0,
+      scale: 2,
+      duration: 5,
+      ease: "power3.out"
+    })
+
+    gsap.from([".header__title",".header__subtitle",".header__contacts"], {
+      scrollTrigger: {
+        trigger: ".header-landscape",
+        // toggleActions: "play pause restart none",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      // scale: 1.6,
+      duration: 3,
+      ease: "power3.in",
+      stagger: .1
+    })
+  })
+
   return (
     <>
       <section className="header-landscape">
+    
+        <div className="wave"></div>
+
 
         <article className='header__container'>
 
@@ -17,10 +54,6 @@ export const Header = () => {
               <a href="#"><LinkedinIcon /></a>
             </div>
           </div>
-
-          {/* <div className="header__image">
-            <img src="https://i.pinimg.com/1200x/61/74/a7/6174a7dd6633dbee637d08bf9ea160a0.jpg" alt="" />
-          </div> */}
 
         </article>
 

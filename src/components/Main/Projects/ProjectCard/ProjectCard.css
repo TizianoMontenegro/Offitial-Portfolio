@@ -1,4 +1,6 @@
 .main__project {
+    width: 100%;
+    max-width: 100%;
     /* background-color: brown; */
     /* padding: 1em; */
     transition: transform .1s;
@@ -20,17 +22,3 @@
     /* background-color: brown; */
     transform: scale(1.1);
 }
-
-
-
-/* 
-.section--info {
-    display: flex;
-    gap: 1.5em;
-    row-gap: 0;
-    flex-wrap: wrap;
-}
-
-.section--info article p {
-    margin: 1em 0;
-} */

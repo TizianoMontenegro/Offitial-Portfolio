@@ -21,7 +21,7 @@ export const Main = () => {
       opacity: 0,
       stagger: .1
     })
-  }, {scope: ".main"})
+  } )
 
   return (
     <main className="main">
