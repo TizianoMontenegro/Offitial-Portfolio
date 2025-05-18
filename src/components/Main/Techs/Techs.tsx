@@ -40,7 +40,7 @@ export const Techs = () => {
       <span><TechButton>CSS</TechButton></span>
       <span><TechButton>JavaScript</TechButton></span>
       <span><TechButton>TypeScript</TechButton></span>
-      <span><TechButton>ReactJS</TechButton></span>
+      <span><TechButton>React</TechButton></span>
       <span><TechButton>Angular</TechButton></span>
       <span><TechButton>TailwindCSS</TechButton></span>
       <span><TechButton>Python</TechButton></span>
