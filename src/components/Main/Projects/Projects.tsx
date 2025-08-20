@@ -42,7 +42,7 @@ export const Projects = () => {
     gsap.from(".main__project--list div", {
       scrollTrigger: {
         trigger: ".main__project--list div",
-        toggleActions: "restart none none none"
+        // toggleActions: "restart none none none"
       },
 
       x: -100,
@@ -60,6 +60,14 @@ export const Projects = () => {
         { filteredProjects ?
           filteredProjects.map((project) => {
             // console.log(filteredProjects)
+            if(!project.imageUrl) {
+              return ( 
+                <div key={project.id} onClick={() => setSelectedProject(project)}>
+                  <ProjectCard projectTitle={project.title}/>
+                </div>
+              )
+            }
+
             return ( 
               <div key={project.id} onClick={() => setSelectedProject(project)}>
                 <ProjectCard projectImageUrl={project.imageUrl}/>

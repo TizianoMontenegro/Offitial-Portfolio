@@ -14,7 +14,7 @@ export const Main = () => {
     gsap.from([".main__titles h2", ".main__titles p"], {
       scrollTrigger: {
         trigger: ".main__titles h2",
-        toggleActions: "restart none none none"
+        // toggleActions: "restart none none none"
       },
 
       x: -100,

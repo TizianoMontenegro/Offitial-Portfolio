@@ -41,26 +41,29 @@ export const ProjectModal = ({projectData, onClose}: ProjectModalProps) => {
         <button>x</button>
       </form>
 
+      {
+        projectData.imageUrls && (
+          <div className="slider">
 
-      <div className="slider">
+            <button onClick={handlePrevImage} className="arrow-button arrow-button--left">←</button>
 
-        <button onClick={handlePrevImage} className="arrow-button arrow-button--left">←</button>
+            <div className="images-container">
+              {projectData.imageUrls.map((url, index) => (
+                <img
+                  key={index}
+                  src={url}
+                  alt={`${projectData.title} image ${index + 1}`}
+                  style={{ display: index === currentImageIndex ? 'block' : 'none' }}
+                />
+              ))}
+              {/* <img src={projectData?.imageUrl} alt={`${projectData?.title} image`} /> */}
+            </div>
 
-        <div className="images-container">
-          {projectData.imageUrls.map((url, index) => (
-            <img
-              key={index}
-              src={url}
-              alt={`${projectData.title} image ${index + 1}`}
-              style={{ display: index === currentImageIndex ? 'block' : 'none' }}
-            />
-          ))}
-          {/* <img src={projectData?.imageUrl} alt={`${projectData?.title} image`} /> */}
-        </div>
+            <button onClick={handleNextImage} className="arrow-button arrow-button--right">→</button>
 
-        <button onClick={handleNextImage} className="arrow-button arrow-button--right">→</button>
-
-      </div>
+          </div>
+        )
+      }
 
       {/* <img src={projectData?.imageUrl} alt={`${projectData?.title} image`} /> */}
 

@@ -6,6 +6,12 @@
     transition: transform .1s;
     overflow: hidden;
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #0003;
 }
 
 .main__project img {
@@ -21,4 +27,11 @@
 .main__project:hover > img {
     /* background-color: brown; */
     transform: scale(1.1);
+}
+
+.main__project span {
+    color: #fff;
+    transition: transform .1s;
+    padding: 2em;
+    font-size: 1lh;
 }

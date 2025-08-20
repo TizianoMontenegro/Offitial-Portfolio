@@ -17,7 +17,7 @@ export const Techs = () => {
     gsap.from(".techs span", {
       scrollTrigger: {
         trigger: ".techs",
-        toggleActions: "restart none none none",
+        // toggleActions: "restart none none none",
       },
 
       x: -100,
@@ -41,16 +41,16 @@ export const Techs = () => {
       <span><TechButton>JavaScript</TechButton></span>
       <span><TechButton>TypeScript</TechButton></span>
       <span><TechButton>React</TechButton></span>
-      <span><TechButton>Angular</TechButton></span>
-      <span><TechButton>TailwindCSS</TechButton></span>
+      {/* <span><TechButton>Angular</TechButton></span> */}
+      {/* <span><TechButton>TailwindCSS</TechButton></span> */}
+      {/* <span><TechButton>GSAP</TechButton></span> */}
       <span><TechButton>Python</TechButton></span>
       <span><TechButton>Flask</TechButton></span>
-      <span><TechButton>SQL</TechButton></span>
       <span><TechButton>SQLite</TechButton></span>
-      <span><TechButton>Git</TechButton></span>
-      <span><TechButton>GitHub</TechButton></span>
-      <span><TechButton>NodeJS</TechButton></span>
-      <span><TechButton>Bun</TechButton></span>
+      {/* <span><TechButton>Git</TechButton></span> */}
+      {/* <span><TechButton>GitHub</TechButton></span> */}
+      {/* <span><TechButton>NodeJS</TechButton></span> */}
+      {/* <span><TechButton>Bun</TechButton></span> */}
 
     </section>
   )
