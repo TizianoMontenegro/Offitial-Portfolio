@@ -41,8 +41,14 @@
     margin: 1em 0 0;
 } */
 
-@media (max-width: 710px) {
+@media (max-width: 850px) {
     .main__titles h2 {
         font-size: 2lh;
+    }
+}
+
+@media (max-width: 590px) {
+    .main__titles h2 {
+        font-size: 1.5lh;
     }
 }

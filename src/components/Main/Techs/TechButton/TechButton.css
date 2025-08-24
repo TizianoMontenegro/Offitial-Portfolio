@@ -19,3 +19,9 @@
 .tech-button--selected:hover {
     background-color: #900;
 }
+
+@media (max-width: 795px) {
+    .tech-button {
+        font-size: .8lh;
+    }
+}
