@@ -18,7 +18,7 @@ export const Header = () => {
       },
       // opacity: 0,
       scale: 2,
-      duration: 5,
+      duration: 1,
       ease: "power3.out"
     })
 
@@ -30,7 +30,7 @@ export const Header = () => {
       },
       opacity: 0,
       // scale: 1.6,
-      duration: 3,
+      duration: .7,
       ease: "power3.in",
       stagger: .1
     })
