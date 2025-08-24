@@ -42,11 +42,13 @@ export const Techs = () => {
       <span><TechButton>TypeScript</TechButton></span>
       <span><TechButton>React</TechButton></span>
       {/* <span><TechButton>Angular</TechButton></span> */}
-      {/* <span><TechButton>TailwindCSS</TechButton></span> */}
+      <span><TechButton>TailwindCSS</TechButton></span>
       {/* <span><TechButton>GSAP</TechButton></span> */}
       <span><TechButton>Python</TechButton></span>
       <span><TechButton>Flask</TechButton></span>
       <span><TechButton>SQLite</TechButton></span>
+      <span><TechButton>TensorFlow</TechButton></span>
+      <span><TechButton>Keras</TechButton></span>
       {/* <span><TechButton>Git</TechButton></span> */}
       {/* <span><TechButton>GitHub</TechButton></span> */}
       {/* <span><TechButton>NodeJS</TechButton></span> */}
