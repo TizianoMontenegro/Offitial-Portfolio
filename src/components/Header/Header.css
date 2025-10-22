@@ -1,6 +1,6 @@
 .header-landscape {
     width: 100%;
-    --height: 100vh;
+    --height: calc(100vh - 7px);
     position: relative;
     min-height: var(--height);
     /* background-color: red; */
@@ -145,7 +145,7 @@
 } */
 
 
-.wave {
+/* .wave {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,7 +156,26 @@
     background-image: url("https://i.postimg.cc/nrW7tHg4/Great-Wave-Of-Kanagawa-min-1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center;    
 
     z-index: -1;
+} */
+
+.svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* transform: translateY(20%); */
+
+    width: 100%;
+    /* height: auto; */
+    min-height: 20vh;
+
+    z-index: -10;
+}
+
+#svg-first {
+}
+#svg-second {
+    visibility: hidden;
 }
