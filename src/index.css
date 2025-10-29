@@ -31,7 +31,19 @@ body {
 ul {
   /* color: var(--smooth-color); */
 }
+.mark {
+  color: var(--primary-color);
+  font-weight: bold;
+}
 
+.icon-dark-back {
+  background-color: var(--background-color);
+  border-radius: 50%;
+}
+.icon-light-back {
+  background-color: var(--color);
+  border-radius: 50%;
+}
 
 .divisor {
   width: 80%;
