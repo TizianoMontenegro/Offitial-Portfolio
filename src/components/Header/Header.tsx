@@ -1,5 +1,5 @@
 import "./Header.css"
-import { GithubIconLight, LinkedinIcon } from "../../assets/Icons"
+import { GithubIconLight, LinkedinIcon } from "../../assets/"
 
 import { gsap } from "gsap/gsap-core"
 import { useGSAP } from "@gsap/react"
@@ -35,6 +35,29 @@ export const Header = () => {
       ease: "power3.in",
       stagger: .1
     })
+
+    gsap.from(".header__description p", {
+      scrollTrigger: {
+        trigger: ".header-landscape",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      duration: .2,
+      delay: .3,
+      ease: "power3.in",
+      stagger: .1,
+    })
+    gsap.from(".header__checkpoints a", {
+      scrollTrigger: {
+        trigger: ".header-landscape",
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
+      duration: .1,
+      delay: .3,
+      ease: "power3.in",
+      stagger: .1,
+    })
   })
 
   return (
@@ -47,15 +70,41 @@ export const Header = () => {
 
         <article className='header__container'>
 
-          <div className="header__info">
-            <h1 className="header__title">Tiziano Montenegro</h1>
-            <h2 className="header__subtitle">Software Developer</h2>
+          <section className="header__info">
+            {/* <h1 className="header__title">Tiziano Montenegro</h1> */}
+            <h1 className="header__title">TIZIANO MONTENEGRO</h1>
+            <h2 className="header__subtitle">AI Developer & Fullstack Web Developer</h2>
 
-            <div className="header__contacts">
-              <a href="#"><GithubIconLight /></a>
-              <a href="#"><LinkedinIcon /></a>
-            </div>
-          </div>
+            <article className="header__contacts-checkpoints__wrapper">
+              <div className="header__description">
+                <p>
+                  <span className="mark">I don’t just train models — I make them useful.</span> From CNNs to full-stack apps, I turn AI experiments into <span className="mark">working products people can actually use.</span>
+                </p>
+
+                <p>
+                  I'm looking for combining complete <span className="mark">Full Stack Websites</span> with <span className="mark">AI integrations.</span>
+                </p>
+              </div>
+
+              <section className="header__contacts">
+                <a href="https://github.com/TizianoMontenegro" target="_blank">
+                  <GithubIconLight weight={127.81 / 3} />
+                </a>
+                <a href="https://www.linkedin.com/in/tizianomontenegro/" target="_blank">
+                  <LinkedinIcon weight={127.81 / 3} />
+                </a>
+                <a className="hidden" href="https://www.linkedin.com/in/tizianomontenegro/" target="_blank">
+                  <LinkedinIcon weight={127.81 / 3} />
+                </a>
+              </section>
+
+              <section className="header__checkpoints">
+                <a href="#">Experience</a>
+                <a href="#">Education</a>
+                <a href="#">About me</a>
+              </section>
+            </article>
+          </section>
 
         </article>
 

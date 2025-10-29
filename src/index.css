@@ -32,6 +32,11 @@ ul {
   /* color: var(--smooth-color); */
 }
 
+.mark {
+  color: var(--primary-color);
+  font-weight: bold;
+} 
+
 
 .divisor {
   width: 80%;
