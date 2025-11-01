@@ -1,43 +1,25 @@
 .header-landscape {
     width: 100%;
-    --height: calc(100vh - 7px);
+    --height: calc(100vh);
     position: relative;
-    min-height: var(--height);
-    /* background-color: red; */
-    /* background-image: url("/public/big2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    /* background-color: #111; */
+    /* min-height: var(--height); */
 
     overflow: hidden; /* for background images */
 }
-
-/* .header-landscape:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, transparent, var(--second-background-color));
-} */
 
 .header__container {
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: var(--pad-y-standard) var(--pad-x-standard);
-    height: var(--height);
+    padding: calc(var(--pad-y-standard)) var(--pad-x-standard);
+    /* height: var(--height); */
+    /* height: 100%; */
     
-    /* background-color: red; */
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
     align-items: center;
-    /* justify-items: center; */
+    text-align: center;
 
     z-index: 90;
 }
@@ -47,119 +29,6 @@
         padding: var(--pad-y-standard) var(--pad-x-standard);
     }
 }
-
-.header__title {
-    /* font-size: 6.9em; */
-    font-size: 6lh;
-    line-height: 1;
-    max-width: min-content;
-    margin: 0;
-    color: transparent;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #ddd;
-    color: #fff;
-    z-index: 22;
-}
-.header__subtitle {
-    font-size: 2lh;
-    color: #fff
-    /* -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #000; */
-}
-
-.header__contacts {
-    display: flex;
-    gap: .7em;
-}
-
-@media (max-width: 800px) {
-    .header__title {
-        /* font-size: 6.9em; */
-        font-size: 4lh;
-        /* line-height: 1;
-        max-width: min-content;
-        margin: 0;
-        color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #fff;
-        z-index: 22; */
-    }
-    .header__subtitle {
-        font-size: 1lh
-    }
-
-    .header__contacts {
-        /* display: flex;
-        gap: .7em; */
-    }
-}
-
-@media (max-width: 560px) {
-    .header__title {
-        /* font-size: 6.9em; */
-        font-size: 3lh;
-        /* line-height: 1;
-        max-width: min-content;
-        margin: 0;
-        color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #fff;
-        z-index: 22; */
-    }
-    .header__subtitle {
-        font-size: 1lh
-    }
-
-    .header__contacts {
-        /* display: flex;
-        gap: .7em; */
-    }
-}
-
-@media (max-width: 395px) {
-    .header__title {
-        /* font-size: 6.9em; */
-        font-size: 2lh;
-        /* line-height: 1;
-        max-width: min-content;
-        margin: 0;
-        color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #fff;
-        z-index: 22; */
-    }
-    .header__subtitle {
-        font-size: 1lh
-    }
-
-    .header__contacts {
-        /* display: flex;
-        gap: .7em; */
-    }
-}
-
-/* @media (max-width: 400px) {
-    .header__title {
-        font-size: 2.5lh;
-    }
-} */
-
-
-/* .wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    min-height: var(--height);
-
-    background-image: url("https://i.postimg.cc/nrW7tHg4/Great-Wave-Of-Kanagawa-min-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
-
-    z-index: -1;
-} */
 
 .svg {
     position: absolute;
@@ -174,8 +43,139 @@
     z-index: -10;
 }
 
-#svg-first {
+.header__title {
+    font-size: 3.75lh;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ddd;
+    color: #fff;
+    z-index: 22;
 }
-#svg-second {
+.header__subtitle {
+    font-size: 1.5lh;
+    color: #fff
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000; */
+}
+@media (max-width: 700px) {
+    .header__subtitle {
+        font-size: 1.3lh
+    }
+}
+@media (max-width: 600px) {
+    .header__title {
+        font-size: 3lh;
+    }
+    .header__subtitle {
+        font-size: 1.1lh
+    }
+}
+@media (max-width: 495px) {
+    .header__title {
+        font-size: 2.5lh;
+    }
+    .header__subtitle {
+        font-size: 1lh
+    }
+}
+@media (max-width: 395px) {
+    .header__title {
+        font-size: 2lh;
+    }
+}
+@media (max-width: 330px) {
+    .header__title {
+        font-size: 1.5lh;
+    }
+}
+
+.header__contacts-checkpoints__wrapper {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    gap: 2em;
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1lh;
+    text-align: right;
+}
+.header__description p {
+    margin: 0;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .7em;
+    
+    /* border: 1px solid white; */
+}
+.header__contacts a {
+    display: flex;
+    padding: .3489em;
+    background-color: #0005;
+    border: 1px solid #fff5;
+    color: #fff;
+    /* border-radius: 50%; */
+}
+.header__contacts a.hidden {
     visibility: hidden;
+}
+
+.header__checkpoints {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+.header__checkpoints a {
+    padding: 1em 2em;
+    background-color: #0005;
+    border: 1px solid #fff5;
+    color: #fff;
+    /* border-radius: 50px; */
+}
+.header__checkpoints a:hover {
+    padding: 1em 2em;
+    background-color: #0005;
+    border: 1px solid #fff5;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .header__contacts-checkpoints__wrapper {
+        grid-template-columns: max-content 1fr;
+    }
+
+    .header__description {
+        grid-column: 1 / 3;
+        text-align: left;
+        gap: 1em;
+        margin: .5em 0 0;
+    }
+}
+@media (max-width: 600px) {
+    .header__contacts-checkpoints__wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .header__description {
+        grid-column: 1 / 2;
+    }
+
+    .header__contacts a.hidden {
+        display: none;
+    }
+    
+    .header__contacts {
+        flex-direction: row;
+        justify-content: start;
+    }
 }
