@@ -151,8 +151,8 @@ export const Header = () => {
               </section>
 
               <section className="header__checkpoints">
-                <a href="#">Experience</a>
-                <a href="#">Education</a>
+                <a href="#main-page">Experience</a>
+                <a href="#education-page">Education</a>
                 <a href="#">About me</a>
               </section>
             </article>

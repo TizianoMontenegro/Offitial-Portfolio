@@ -24,7 +24,7 @@ export const Main = () => {
   } )
 
   return (
-    <main className="main">
+    <main id="main-page" className="main">
 
       <section className='main__col'>
         

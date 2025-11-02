@@ -39,7 +39,7 @@ export const Education = () => {
   // const onCertificateClick = null
 
   return (
-    <div className="edu-wrapper">
+    <div id="education-page" className="edu-wrapper">
       <section className="edu">
         <h2 className="edu__title">Certifications</h2>
 
