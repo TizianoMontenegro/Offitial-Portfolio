@@ -1,71 +1,11 @@
 import "./Education.css"
 
-// import gsap from "gsap/gsap-core"
-// import { useGSAP } from "@gsap/react"
-// import { ScrollTrigger } from "gsap/ScrollTrigger"
-
-// gsap.registerPlugin(useGSAP, ScrollTrigger)
-
 export const Education = () => {
-  // useGSAP(() => {
-  //   const certs = gsap.utils.toArray(".edu__certificate")
-  //   gsap.to(certs, {
-  //     x: `-${certs.length - 1}00%`,
-  //     ease: "none",
-  //     scrollTrigger: {
-  //       trigger: ".edu__certificates",
-  //       pin: true,
-  //       start: "top top",
-  //       scrub: 1,
-  //       // markers: true,
-  //       snap: {
-  //         snapTo: 1 / (certs.length - 1),
-  //         inertia: false,
-  //         duration: {min: 0.1, max: 0.1}
-	// 	    },
-
-  //     }
-  //   })
-    
-  //   gsap.from(".edu__certificate--mobile", {
-  //     scrollTrigger: ".edu__certificate--mobile",
-  //     scale: 1.3,
-  //     duration: .4,
-  //     opacity: .5,
-  //     stagger: .1,
-  //   })
-  // })
-
-  // const onCertificateClick = null
 
   return (
     <div id="education-page" className="edu-wrapper">
       <section className="edu">
         <h2 className="edu__title">Certifications</h2>
-
-        {/* <article className="edu__certificates">
-
-            <a href="https://certificates.cs50.io/7bb466dd-c10b-4769-bf63-4c885013b122.pdf?size=letter" target="_blank" className="edu__certificate" title="CS50 Computer Science Harvard Certificate">
-              <img loading="lazy" src="https://i.postimg.cc/50bVWhMr/CS50x-min.png" alt="CS50 Harvard Course Certificate" />
-            </a>
-
-            <a href="https://www.udemy.com/certificate/UC-35d8e60e-b268-4c04-9f90-f9fb3e614390/" target="_blank" className="edu__certificate" title="JavaScript Master Udemy Certificate">
-              <img loading="lazy" src="https://i.postimg.cc/9fP6bLqY/UC-35d8e60e-b268-4c04-9f90-f9fb3e614390-min.jpg" alt="JavaScript Master Course Certificate" />
-            </a>
-
-            <a href="https://certificates.cs50.io/7bb466dd-c10b-4769-bf63-4c885013b122.pdf?size=letter" target="_blank" className="edu__certificate" title="CS50 Computer Science Harvard Certificate">
-              <img loading="lazy" src="https://i.postimg.cc/50bVWhMr/CS50x-min.png" alt="CS50 Harvard Course Certificate" />
-            </a>
-
-            <a href="https://www.udemy.com/certificate/UC-35d8e60e-b268-4c04-9f90-f9fb3e614390/" target="_blank" className="edu__certificate" title="JavaScript Master Udemy Certificate">
-              <img loading="lazy" src="https://i.postimg.cc/9fP6bLqY/UC-35d8e60e-b268-4c04-9f90-f9fb3e614390-min.jpg" alt="JavaScript Master Course Certificate" />
-            </a>
-
-            <a href="https://www.udemy.com/certificate/UC-412cea72-9b35-427b-8019-cda1f36dc946/" target="_blank" className="edu__certificate" title="CSS Master Udemy Certificate">
-              <img loading="lazy" src="https://i.postimg.cc/HxBfDjzJ/UC-412cea72-9b35-427b-8019-cda1f36dc946-min.jpg" alt="CSS Master Course Certificate" />
-            </a>
-          
-        </article> */}
 
         <article className="edu__certificates--mobile">
 
