@@ -4,7 +4,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2em;
+    /* gap: 2em; */
 }
 
 .main__col {
@@ -51,4 +51,25 @@
     .main__titles h2 {
         font-size: 1.5lh;
     }
+}
+
+
+
+.custom-shape-divider-top-1765805787 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    z-index: 50;
+}
+
+.custom-shape-divider-top-1765805787 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 55px;
+}
+
+.custom-shape-divider-top-1765805787 .shape-fill {
+    fill: #111111;
 }
