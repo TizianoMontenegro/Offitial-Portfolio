@@ -7,6 +7,10 @@
         linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
     background-size: 55px 55px;
     /* animation: colors 5s linear 0s infinite; */
+
+
+    /* REMOVE LINE IF HEIGHT PROBLEMS OCCURS */
+    margin-top: -40px;
 }
 
 /* @keyframes colors {
@@ -175,7 +179,9 @@
 
     .edu__certificate--banner {
         max-height: none;
-        overflow-y: initial;
+        /* overflow-y: initial; */
+        max-height: 80%;
+        overflow-y: auto;
     }
     .edu__certificate:active > .edu__certificate--banner {
         /* display: block; */
@@ -204,4 +210,36 @@
     display: block;
     width: 100%;
     max-width: 100%;
+}
+
+
+.edu_certificate--techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    row-gap: 1em;
+}
+.edu_certificate--tech {
+    font-size: .9lh;
+    font-weight: bold;
+}
+
+.custom-shape-divider-top-1765804317 {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1765804317 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.custom-shape-divider-top-1765804317 .shape-fill {
+    fill: #0F0F0F;
 }
